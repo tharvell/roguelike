@@ -5,4 +5,5 @@ authors = ["Tom Harvell <harvellt@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+rltk = { version = "0.7.0" }
 tcod = "0.13"
