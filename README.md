@@ -3,5 +3,5 @@ Started with the tutorial:
 https://bfnightly.bracketproductions.com/chapter_0.html
 
 Built on the packages: 
-https://github.com/thebracket/bracket-lib
-https://github.com/amethyst/specs
+- [RLTK AKA Bracket Lib](https://github.com/thebracket/bracket-lib) 
+- [SPECS](https://github.com/amethyst/specs)
