@@ -48,7 +48,7 @@ fn main() {
 
     gs.ecs
         .create_entity()
-        .with(Position {x: 40, y:25 })
+        .with(Position {x: 0, y: 25 })
         .with(Renderable{
             glyph: rltk::to_cp437('@'),
             fg: RGB::named(rltk::YELLOW),
@@ -59,7 +59,7 @@ fn main() {
     for i in 0..10 {
         gs.ecs
           .create_entity()
-          .with(Position{x: i * 7, y: 20})
+          .with(Position{x: i * 7, y: 0})
           .with(Renderable{
               glyph: rltk::to_cp437('@'),
               fg: RGB::named(rltk::RED),
