@@ -171,6 +171,7 @@ fn main() {
 
     gs.ecs.insert(new_map());
 
+    
     gs.ecs
         .create_entity()
         .with(Position {x: 40, y: 25 })
