@@ -1,13 +1,11 @@
 use rltk::{Rltk, GameState, Console, RGB};
 use specs::prelude::*;
 
-
 mod player;
 use player::*;
 
 mod components;
 use components::*;
-
 
 pub struct State {
     ecs: World
