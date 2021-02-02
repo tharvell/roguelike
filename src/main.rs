@@ -7,6 +7,9 @@ use player::*;
 mod components;
 use components::*;
 
+mod rect;
+pub use rect::Rect;
+
 mod map;
 use map::*;
 
@@ -57,9 +60,8 @@ fn main() {
     gs.ecs.register::<Renderable>();
     gs.ecs.register::<Player>();
 
-    gs.ecs.insert(new_map());
+    gs.ecs.insert(new_map_rooms_and_corridors());
 
-    
     gs.ecs
         .create_entity()
         .with(Position {x: 40, y: 25 })
