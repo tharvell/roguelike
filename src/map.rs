@@ -39,6 +39,12 @@ pub fn new_map_rand_walls() -> Vec<TileType> {
 
 pub fn new_map_rooms_and_corridors() -> Vec<TileType> {
     let mut map = vec![TileType::Wall; 80*50];
+    
+    let room1 = Rect::new(20, 15, 10, 15);
+    let room2 = Rect::new(35, 15, 10, 15);
+
+    apply_room_to_map(&room1, &mut map);
+    apply_room_to_map(&room2, &mut map);
 
     map
 }
